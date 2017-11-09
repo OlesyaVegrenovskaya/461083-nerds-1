@@ -118,16 +118,25 @@
  			<p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
  		</div>
  	</footer>
- 	<div class="popup">
-        <div>
-              <b> Напишите нам </b>
-              <botton type="bottom"> Закрыть </botton>
-        </div>
+ 	<section class="popup">
+        <h3> Напишите нам </h3>
+        <button type="botton"> Закрыть </button>
+
         <div class="client-data">
-            <!--Тут будет форма-->
+          <p class="name">
+           <label for="popup-name"> Ваше имя:</label>
+            <input id="popup-name" type="text" name="name" value="" placeholder="Представтесь, пожалуйста">
+          </p>
+          <p class="e-mail">
+           <label for="popup-mail"> Ваш e-mail: </label>
+            <input id="popup-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+          </p>
         </div>
-        <!--Тут будет форма-->
-        <botton type="bottom"> отправить </botton>
-    </div>
+          <p class="letter">
+            <label for="popup-letter">Текст письма:</label>
+            <input id="popup-letter"type="text" name="letter" value="" placeholder="В свободной форме">
+          </p>
+        <button type="botton"> отправить </button>
+    </section>
 </body>
 </html>
