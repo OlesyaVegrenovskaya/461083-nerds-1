@@ -3,21 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title> Nerds каталог </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-	   <nav>
-		 <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
-		 <ul class="sait-navigation">
-		 	<li> <a href="studio.html"> Студия </a></li>
-		 	<li> <a href="customers.html"> Клиенты </a></li>
-		 	<li> <a href="shop.html"> Магазин </a> </li>
- 		    <li> <a href="contacts.html"> Контакты </a> </li>
- 		 </ul>
- 		 <ul class="basket-navigation">
- 		     	<li class="basket-link"> <a href="basket.html"> Корзина </a> </li>
- 		 </ul>
-       </nav>
+	<header class="main-header">
+	   <nav class="main-navigation" >
+      <a class="main-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
+      </a>
+      <ul class="sait-navigation">
+        <li> <a href="studio.html"> Студия </a> </li>
+        <li> <a href="customers.html"> Клиенты </a> </li>
+        <li> <a href="shop.html"> Магазин </a> </li>
+        <li> <a href="contacts.html"> Контакты </a> </li>
+      </ul>
+      <ul class="basket-navigation">
+        <li class="basket-link"> <a class="basket" href="basket.html"> Корзина </a> </li>
+      </ul>
+    </nav>
        <h1 class="header-text">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
@@ -26,21 +31,23 @@
 			<div class="price">
 		        <p class="title-filter">Стоимость:</p>
 		        <input type="range" min="0" max="15 000" step="1">
-		    	<ul>
-			        <li> <label for="price-from"> oт </label> <input type="number" id="price-from" value="0">   </li>
-			        <li> <label for="price-for"> до </label> <input type="number" id="price-for" value="15000"> </li>
-		        </ul>
+		    	<ul class="price-filter">
+			       <li class="price-item"> <label for="price-from"> oт </label> <input type="number" id="price-from" value="0"> </li>
+			       <li class="price-item"> <label for="price-for"> до </label> <input type="number" id="price-for" value="15000"> </li>
+		      </ul>
 		    </div>
 		    <div class="grid">
-		    	<p class="title-filter">Цена:</p>
-		    	<ul>
+		    	<p class="title-filter">Cетка:</p>
+		    	<ul class="grid-list">
 			         <li class="field-options"> <input class=" visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="grid-adapt" value="adapt">
-                                                   <label for="grid-adapt"> Адаптивная </label>
-                         </li>
+                  <label for="grid-adapt"> Адаптивная </label>
+               </li>
 			         <li class="field-options"> <input class=" visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="grid-fix" value="fix">
-                                                   <label for="grid-fix"> Фиксированная </label> </li>
+                  <label for="grid-fix"> Фиксированная </label>
+               </li>
 			         <li class="field-options"> <input class=" visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rub" id="grid-rub">
-                                                    <label for="grid-rub"> Резиновая </label> </li>
+                  <label for="grid-rub"> Резиновая </label>
+               </li>
 			    </ul>
 			</div>
 			<div class="features">
@@ -67,7 +74,7 @@
 		</div>
 		<div class="sorting">
 	       <p class="main-sorting"> Сортировать:</p>
-	       <ul>
+	       <ul class="sorting-list">
      	         <li class="template-current"> по цене </li>
 		         <li class="template-sorting"> <a href="type.html">по типу </a></li>
 		         <li class="template-sorting"> <a href="name.html">по названию </a></li>
@@ -79,17 +86,17 @@
 	    </div>
 	    <div class="template">
 	         <ul class="template-list">
-	             <li> <a href="sedona.html"> <img src="img/img-sedona.jpg" width="360" height="575" alt="Седона"> </a> </li>
-	             <li> <a href="pink.html"> <img src="img/img-pink.jpg" width="360" height="575" alt="Пинк"> </a> </li>
-	             <li> <a href="barbershop.html"> <img src="img/img-barbershop.jpg" width="360" height="575" alt="Барбершоп"></a></li>
-	             <li> <a href="mishka.html"> <img src="img/img-mishka.jpg" width="360" height="575" alt="Мишка"> </a> </li>
-	             <li> <a href="studies.html"> <img src="img/img-aplus.jpg" width="360" height="575" alt="Аплус"> </a> </li>
-	             <li> <a href="Kvast.html"> <img src="img/img-kvast.jpg" width="360" height="575" alt="Кваст"> </a> </li>
+	             <li class="template-item"> <a href="sedona.html"> <img src="img/img-sedona.jpg" width="360" height="575" alt="Седона"> </a> </li>
+	             <li class="template-item"> <a href="pink.html"> <img src="img/img-pink.jpg" width="360" height="575" alt="Пинк"> </a> </li>
+	             <li class="template-item"> <a href="barbershop.html"> <img src="img/img-barbershop.jpg" width="360" height="575" alt="Барбершоп"></a></li>
+	             <li class="template-item"> <a href="mishka.html"> <img src="img/img-mishka.jpg" width="360" height="575" alt="Мишка"> </a> </li>
+	             <li class="template-item"> <a href="studies.html"> <img src="img/img-aplus.jpg" width="360" height="575" alt="Аплус"> </a> </li>
+	             <li class="template-item"> <a href="Kvast.html"> <img src="img/img-kvast.jpg" width="360" height="575" alt="Кваст"> </a> </li>
 	         </ul>
-           <section class="sedona">
-             <h3 class="sedona">sedona</h3>
-             <p class=""> Информационный сайт для туристов </p>
-             <span class="price"> 9900 РУБ.</span>
+           <section class="site-list">
+             <h3 class="site-name">sedona</h3>
+             <p class="site-description"> Информационный сайт <br> для туристов </p>
+             <a class="site-price" href="sedona.ru"> 9900 РУБ.</a>
           </section>
        </div>
        <ul class="pagination-list">
@@ -102,11 +109,11 @@
 	<footer class="main-footer">
  		    <img src="img/Карта.jpg" width="1439" height="416" alt="Карта">
  		<section class="address">
- 			<h2 class="address-studio"> nerds design studio</h2>
- 			<p> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
- 			<p> тел. +7(812) 275-75-75</p>
- 		<button>Напишите нам</button>
- 		</section>
+      <h3 class="address-studio"> nerds design studio</h3>
+      <p class="footer-adress"> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+      <p class="footer-phone"> тел. +7(812) 275-75-75</p>
+      <a class="button" href="#">Напишите нам</a>
+    </section>
  		<p class="marker">Тут мы находимся </p>
  		<ul class="social">
  			<li class="social-item"> <a href="#"> В контакте </a> </li>
@@ -119,24 +126,25 @@
  		</div>
  	</footer>
  	<section class="popup">
-        <h3> Напишите нам </h3>
+        <h2 class="popup-text"> Напишите нам </h2>
         <button type="botton"> Закрыть </button>
-
+        <form action="https://echo.htmlacademy.ru" method="post">
         <div class="client-data">
-          <p class="name">
-           <label for="popup-name"> Ваше имя:</label>
-            <input id="popup-name" type="text" name="name" value="" placeholder="Представтесь, пожалуйста">
-          </p>
-          <p class="e-mail">
-           <label for="popup-mail"> Ваш e-mail: </label>
-            <input id="popup-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
-          </p>
-        </div>
+             <p class="name">
+               <label for="popup-name"> Ваше имя:</label>
+               <input id="popup-name" type="text" name="name" value="" placeholder="Представтесь, пожалуйста">
+             </p>
+             <p class="e-mail">
+               <label for="popup-mail"> Ваш e-mail: </label>
+               <input id="popup-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+             </p>
+       </div>
           <p class="letter">
             <label for="popup-letter">Текст письма:</label>
-            <input id="popup-letter"type="text" name="letter" value="" placeholder="В свободной форме">
+            <textarea id="popup-letter" type="text" name="letter"> В свободной форме </textarea>
           </p>
-        <button type="botton"> отправить </button>
+        <input type="submit" value="Отправить">
+        </form>
     </section>
 </body>
 </html>
