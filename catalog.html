@@ -9,23 +9,27 @@
 </head>
 <body>
 	<header class="main-header">
+    <div class="container">
 	   <nav class="main-navigation" >
       <a class="main-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
       </a>
       <ul class="sait-navigation">
-        <li> <a href="studio.html"> Студия </a> </li>
-        <li> <a href="customers.html"> Клиенты </a> </li>
-        <li> <a href="shop.html"> Магазин </a> </li>
-        <li> <a href="contacts.html"> Контакты </a> </li>
+        <li class="navigation-item"> <a href="studio.html"> Студия </a> </li>
+        <li class="navigation-item"> <a href="customers.html"> Клиенты </a> </li>
+        <li class="navigation-item"> <a href="shop.html"> Магазин </a> </li>
+        <li class="navigation-item"> <a href="contacts.html"> Контакты </a> </li>
       </ul>
       <ul class="basket-navigation">
         <li class="basket-link"> <a class="basket" href="basket.html"> Корзина </a> </li>
       </ul>
     </nav>
        <h1 class="header-text">Магазин готовых шаблонов</h1>
+    </div>
 	</header>
-	<main>
+	<main class="container">
+    <div class="main-wrapper">
+      <div class="filter-wrapper">
 		<div class="filtres">
 		  <form class="filter" method ="get" action=" https://echo.htmlacademy.ru">
 			<div class="price">
@@ -72,6 +76,8 @@
 		    <button type="submit" class=" filter-button button"> Показать </button>
 		  </form>
 		</div>
+  </div>
+  <div class="template-wrapper">
 		<div class="sorting">
 	       <p class="main-sorting"> Сортировать:</p>
 	       <ul class="sorting-list">
@@ -105,27 +111,31 @@
 	         <li class="pagination-item"><a href="#">3</a></li>
 	         <li class="pagination-item"><a href="#">cледующая</a></li>
 	   </ul>
+   </div>
+ </div>
 	</main>
 	<footer class="main-footer">
- 		    <img src="img/Карта.jpg" width="1439" height="416" alt="Карта">
- 		<section class="address">
+        <img src="img/Карта.jpg"  width="100%" alt="191186, Санкт-Петербург ул.Б.Конюшенная. д. 19/8">
+    <section class="address">
       <h3 class="address-studio"> nerds design studio</h3>
       <p class="footer-adress"> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-phone"> тел. +7(812) 275-75-75</p>
       <a class="button" href="#">Напишите нам</a>
     </section>
- 		<p class="marker">Тут мы находимся </p>
- 		<ul class="social">
- 			<li class="social-item"> <a href="#"> В контакте </a> </li>
- 			<li class="social-item"> <a href="#"> Фейсбук </a> </li>
- 			<li class="social-item"> <a href="#"> Инстраграмм </a> </li>
- 		</ul>
- 		<div class="footer-text">
- 			<b class="tagline-text">Давайте дружить, это выгодно </b>
- 			<p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
- 		</div>
- 	</footer>
- 	<section class="popup">
+    <p class="marker">Тут мы находимся </p>
+    <div class="footer-item container">
+      <ul class="social">
+       <li class="social-item"> <a href="#"> В контакте </a> </li>
+       <li class="social-item"> <a href="#"> Фейсбук </a> </li>
+       <li class="social-item"> <a href="#"> Инстраграмм </a> </li>
+      </ul>
+      <div class="footer-text">
+        <b class="tagline-text">Давайте дружить, это выгодно! </b>
+        <p class="discount-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+    <section class="popup">
         <h2 class="popup-text"> Напишите нам </h2>
         <button type="botton"> Закрыть </button>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -146,5 +156,5 @@
         <input type="submit" value="Отправить">
         </form>
     </section>
-</body>
+ </body>
 </html>
